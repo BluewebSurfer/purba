@@ -96,13 +96,13 @@ body {font-family: 'Merienda', cursive;
     }
     
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 480px) {
      .topnav-right {
         float:left;
       }
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 480px) {
       .topnav a {display: none;}
       .topnav a.icon {
         float: right;
@@ -110,7 +110,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 480px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive .icon {
         position: absolute;
@@ -133,6 +133,13 @@ body {font-family: 'Merienda', cursive;
     }
 
     @media screen and (max-width: 480px) {
+      .container {
+       display: flex;
+      
+      }
+    }
+
+    @media screen and (max-width: 1250px) {
       .container {
        display: flex;
       
@@ -194,6 +201,13 @@ body {font-family: 'Merienda', cursive;
         font-size: 30px;
       }
     }
+    @media screen and (max-width: 1250px) {
+      .centered {
+        width: 18%;
+        left: 13%;
+        font-size: 30px;
+      }
+    }
 
     .imgBoxR:hover
     {
@@ -206,7 +220,7 @@ body {font-family: 'Merienda', cursive;
     .bottom-left{
         position: absolute;
         top: 67%;
-        left: 35%;
+        left: 40%;
         transform: translate(-50%, -50%);
         width: 50%;
         text-align: center;
@@ -227,6 +241,15 @@ body {font-family: 'Merienda', cursive;
       .bottom-left {
         width:80%;
         left: 50%;
+        top: 65%;
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (max-width: 1250px) {
+      .bottom-left {
+        width:60%;
+        left: 32%;
         top: 65%;
         font-size: 20px;
       }
@@ -297,14 +320,14 @@ body {font-family: 'Merienda', cursive;
     font-weight: bold;
     /* border: 3px solid #f1f1f1; */
     position: absolute;
-    top:66%;
+    top: 89%;
     left: 80%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 40%;
     padding: 20px;
     text-align: center;
-    height:79.3%;
+    height: 90.3%;
     margin-top: 0px;
   }
 
@@ -519,9 +542,25 @@ color: white;
   box-shadow: 0 0 10px black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .columnimg {
     width: 100%;
+   
+  }
+}
+@media screen and (max-width: 360px) {
+  .columnimg {
+    width: 100%;
+   
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .columnimg {
+   
+    width: 350px;
+  height: 300px;
+ 
    
   }
 }

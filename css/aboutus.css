@@ -188,6 +188,14 @@ body {font-family: 'Merienda', cursive;
         font-size: 30px;
       }
     }
+
+    @media screen and (max-width: 1250px) {
+      .centered {
+        width: 18%;
+        left: 13%;
+        font-size: 30px;
+      }
+    }
     .imgBoxR:hover
     {
       -moz-box-shadow: 0 0 10px #ccc;
@@ -227,7 +235,14 @@ body {font-family: 'Merienda', cursive;
       }
     }
 
-  
+    @media screen and (max-width: 1250px) {
+      .bottom-left {
+        width:60%;
+        left: 33%;
+        top: 65%;
+        font-size: 20px;
+      }
+    }
    
 
   

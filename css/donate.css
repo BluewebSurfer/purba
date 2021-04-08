@@ -223,10 +223,18 @@ body {font-family: 'Merienda', cursive;
       }
     }
   
-  
+    @media screen and (max-width: 1250px) {
+      .bottom-left {
+       
+        top: 72%;
+    left: 34%;
+        
+      }
+    }
     
     
    
+  
   
   /* link */
   a:link {
