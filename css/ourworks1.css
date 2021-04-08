@@ -152,6 +152,14 @@ body {font-family: 'Merienda', cursive;
       border-radius: 20px;
       text-align: center;
     }
+    .imgBoxR:hover
+    {
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+      transform: scale(1.1);
+
+    }
     
     .container .btn:hover {
       background-color: black;

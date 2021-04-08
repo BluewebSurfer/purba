@@ -168,7 +168,14 @@ body {font-family: 'Merienda', cursive;
       font-family: 'Merienda', cursive;
       color: white;
     }
+    .imgBoxR:hover
+    {
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+      transform: scale(1.1);
 
+    }
 
     @media screen and (max-width: 480px) {
       .centered {
