@@ -262,6 +262,7 @@ body {font-family: 'Merienda', cursive;
     background: rgba(0, 0, 0, 0.514);
     padding: 10px;
     height: 1000px;
+    overflow: scroll;
   }
   
   * {
@@ -353,8 +354,18 @@ text-align: center;
     font-size: 35px;
     text-align: center;
     margin-bottom: 0;
+    display: none;
   }
-
+/* @media only screen and (min-width:1000px){
+ h5{
+   text-indent: -99999px;
+ } */
+/* }
+@media only screen and (max-width:480px){
+  h5{
+    text-indent:1.5em;
+  }
+ } */
   /* next column */
 
   
@@ -541,4 +552,8 @@ text-align: center;
   padding: 5px;
   margin-top: -40px;
   }
-    
+   @media screen and (min-width:480px) {  
+  #rupan{
+   font-size: 1px;
+  }
+}
