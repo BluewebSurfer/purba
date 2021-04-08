@@ -184,7 +184,7 @@ body {font-family: 'Merienda', cursive;
         font-size: 30px;
       }
     }
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1280px) {
       .centered {
         width: 18%;
         left: 13%;
@@ -221,7 +221,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1280px) {
       .bottom-left {
         width:60%;
         left: 32%;
@@ -366,7 +366,7 @@ box-shadow: 0 0 10px black;
     }
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1280px) {
     .new {
       width: 297px;
       height: 329px;

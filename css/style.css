@@ -114,7 +114,7 @@ body {
      }
    }
 
-   @media only screen and (max-width: 1250px) {
+   @media only screen and (max-width: 1280px) {
     .topnav-right {
        float:left;
        background-color: #00000052;
@@ -339,7 +339,7 @@ a:active {
     }
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1280px) {
     .column3 {
       
       height: 600px;
@@ -362,7 +362,7 @@ a:active {
       
     }
   }
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1280px) {
     .column4 {
       
       height: 600px;
@@ -501,7 +501,7 @@ a:active {
     }
   }
 
-  @media screen and (max-width: 1250px) {
+  @media screen and (max-width: 1280px) {
     .column8 {
       
     font-size: 1.5rem;
@@ -593,7 +593,7 @@ transform:translate(-50%,-50%);
     
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
   .grid-container {
    
     display:flex;

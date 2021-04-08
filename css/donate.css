@@ -223,7 +223,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
   
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1280px) {
       .bottom-left {
        
         top: 72%;

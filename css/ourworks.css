@@ -139,7 +139,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1280px) {
       .container {
        display: flex;
       
@@ -201,7 +201,7 @@ body {font-family: 'Merienda', cursive;
         font-size: 30px;
       }
     }
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1280px) {
       .centered {
         width: 18%;
         left: 13%;
@@ -246,7 +246,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: 1280px) {
       .bottom-left {
         width:60%;
         left: 32%;
@@ -555,7 +555,7 @@ color: white;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
   .columnimg {
    
     width: 350px;
