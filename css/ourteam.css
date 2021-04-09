@@ -91,7 +91,11 @@ body {font-family: 'Merienda', cursive;
       float: right;
       margin-right: 60px;
     }
-    
+    @media (min-width:568px) and (max-width:1250px) {
+      .topnav-right {
+       float: left;
+      }
+    }
     
     @media only screen and (max-width: 600px) {
      .topnav-right {
@@ -99,7 +103,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 770px) {
       .topnav a {display: none;}
       .topnav a.icon {
         float: right;
@@ -107,7 +111,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
     
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 770px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive .icon {
         position: absolute;
@@ -192,6 +196,15 @@ body {font-family: 'Merienda', cursive;
       }
     }
 
+
+    @media screen and (max-width: 770px) {
+      .centered {
+        width: 25%;
+
+        left: 18%;
+      
+      }
+    }
     .bottom-left{
         position: absolute;
         top: 67%;
@@ -287,6 +300,14 @@ body {font-family: 'Merienda', cursive;
     overflow: scroll;
   }
   
+
+  @media (min-width:568px) and (max-width:1250px) {
+    .content {
+     
+      height: 550px;
+    
+    }
+  }
   * {
     box-sizing: border-box;
   }
@@ -310,6 +331,14 @@ body {font-family: 'Merienda', cursive;
     .column {
       width: 100%;
       height: 500px;
+    }
+  }
+
+  @media (min-width:568px) and (max-width:1250px) {
+    .column {
+     
+      height: 108px;
+    
     }
   }
   
@@ -373,6 +402,53 @@ box-shadow: 0 0 10px black;
     }
   }
 
+  @media (min-width:568px) and (max-width:1250px) {
+    .new {
+      width: 200px;
+      height: 208px;
+    
+    }
+  }
+
+/* 2 */
+  .new1 {
+    box-shadow: 0 0 10px black;
+        width: 380px;
+        height: 400px;
+        
+      }
+    
+    
+      @media screen and (max-width: 480px) {
+        .new1 {
+          width: 100%;
+          height: 400px;
+         margin: 5px;
+        }
+      }
+    
+      @media screen and (max-width: 360px) {
+        .new1 {
+          width: 100%;
+          height: 400px;
+         margin: 5px;
+        }
+      }
+    
+      @media screen and (max-width: 1280px) {
+        .new1 {
+          width: 297px;
+          height: 329px;
+        }
+      }
+    
+      @media (min-width:568px) and (max-width:1250px) {
+        .new1 {
+          width: 221px;
+          height: 208px;
+        
+        }
+      }
   h2{
 text-align: center;
     color: white;
@@ -393,7 +469,7 @@ text-align: center;
     margin-bottom: 0;
     display: none;
   }
-/* @media only screen and (min-width:1000px){
+/* @media only screen and (max-width:1000px){
  h5{
    text-indent: -99999px;
  } */
@@ -416,6 +492,12 @@ text-align: center;
     margin-top: 80px;
   }
   
+
+  @media (min-width:568px) and (max-width:1250px) {
+    .content1 {
+     height:1000px ;
+    }
+  }
   * {
     box-sizing: border-box;
   }
@@ -430,6 +512,13 @@ text-align: center;
     margin-top: 150px;/* Should be removed. Only for demonstration */
   }
   
+
+  @media (min-width:568px) and (max-width:1250px) {
+    .column2 {
+      margin-top: 0px;
+    
+    }
+  }
   /* Clear floats after the columns */
   .row2:after {
     content: "";
@@ -453,7 +542,12 @@ text-align: center;
     margin-bottom: 134px;;
     /* Should be removed. Only for demonstration */
   }
-  
+  @media (min-width:568px) and (max-width:1250px) {
+    .column3 {
+      margin-top: 0px;
+    
+    }
+  }
   /* Clear floats after the columns */
   .row3:after {
     content: "";
@@ -530,7 +624,12 @@ text-align: center;
     margin-top: 0px;
   }
 }
-
+@media (min-width:568px) and (max-width:1250px) {
+  .column17 {
+    margin-top: 0px;
+ 
+  }
+}
 .danger16 {
   background-color: #f777b2;
  
@@ -589,7 +688,7 @@ text-align: center;
   padding: 5px;
   margin-top: -40px;
   }
-   @media screen and (min-width:480px) {  
+   @media screen and (max-width:480px) {  
   #rupan{
    font-size: 1px;
   }

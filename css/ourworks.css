@@ -96,13 +96,13 @@ body {font-family: 'Merienda', cursive;
     }
     
     
-    @media only screen and (max-width: 480px) {
+    @media only screen and (max-width: 770px) {
      .topnav-right {
         float:left;
       }
     }
     
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 770px) {
       .topnav a {display: none;}
       .topnav a.icon {
         float: right;
@@ -110,7 +110,7 @@ body {font-family: 'Merienda', cursive;
       }
     }
     
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 770px) {
       .topnav.responsive {position: relative;}
       .topnav.responsive .icon {
         position: absolute;
@@ -209,6 +209,14 @@ body {font-family: 'Merienda', cursive;
       }
     }
 
+    @media (min-width:568px) and (max-width:1250px) {
+      .centered {
+        width: 18%;
+        top: 50%;
+        left: 13%;
+        font-size: 30px;
+      }
+    }
     .imgBoxR:hover
     {
       -moz-box-shadow: 0 0 10px #ccc;
@@ -220,7 +228,7 @@ body {font-family: 'Merienda', cursive;
     .bottom-left{
         position: absolute;
         top: 67%;
-        left: 43%;
+        left: 33%;
         transform: translate(-50%, -50%);
         width: 50%;
         text-align: center;
@@ -254,7 +262,14 @@ body {font-family: 'Merienda', cursive;
         font-size: 20px;
       }
     }
-  
+    @media (min-width:568px) and (max-width:1250px) {
+      .bottom-left {
+        width:60%;
+        left: 30%;
+        top: 65%;
+        font-size: 20px;
+      }
+    }
   
     .new{
       box-shadow: 0 0 10px black;
@@ -264,11 +279,20 @@ body {font-family: 'Merienda', cursive;
   
   /* link */
   a:link {
-    color: rgb(212, 209, 209);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 28px;
   }
   
+
+
+  @media (min-width:568px) and (max-width:1250px) {
+    a:link {
+     
+      font-size: 17px;
+    }
+  }
+
   /* visited link */
   a:visited {
     color: rgb(212, 209, 209);
@@ -348,6 +372,13 @@ body {font-family: 'Merienda', cursive;
     }
   }
 
+  @media (min-width:568px) and (max-width:1250px) {
+    .bg-text {
+     display: none;
+    
+    }
+  }
+  
   .clearfix::after {
     content: "";
     clear: both;
@@ -376,7 +407,7 @@ body {font-family: 'Merienda', cursive;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
+    max-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 10;
@@ -575,6 +606,14 @@ color: white;
   }
 }
 
+
+@media (min-width:568px) and (max-width:1250px) {
+  .columnimg {
+    width: 221px;
+    height: 208px;
+  
+  }
+}
 /* footer */
 
 * {
