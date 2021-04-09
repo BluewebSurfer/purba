@@ -266,6 +266,7 @@ body {font-family: 'Merienda', cursive;
   a:link {
     color: rgb(212, 209, 209);
     text-decoration: none;
+    font-size: 28px;
   }
   
   /* visited link */
@@ -341,8 +342,8 @@ body {font-family: 'Merienda', cursive;
 
   @media screen and (max-width: 1280px) {
     .bg-text {
-    top:80%;
-    height: 82%;
+      top: 74%;
+      height: 90%;
     
     }
   }
