@@ -195,7 +195,7 @@ body {font-family: 'Merienda', cursive;
     .bottom-left{
         position: absolute;
         top: 67%;
-        left: 25%;
+        left: 30%;
         transform: translate(-50%, -50%);
         width: 55%;
         text-align: center;
