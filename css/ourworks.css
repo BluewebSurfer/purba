@@ -189,6 +189,7 @@ body {font-family: 'Merienda', cursive;
     @media screen and (max-width: 480px) {
       .centered {
         width: 55%;
+        top: 50%;
         left: 35%;
         font-size: 40px;
       }
@@ -238,8 +239,8 @@ body {font-family: 'Merienda', cursive;
 
     @media screen and (max-width: 480px) {
       .bottom-left {
-        width: 70%;
-        left: 45%;
+        width: 75%;
+        left: 48%;
         top: 65%;
         font-size: 20px;
       }
@@ -254,11 +255,11 @@ body {font-family: 'Merienda', cursive;
       }
     }
 
-    @media screen and (max-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       .bottom-left {
         width:60%;
-        left: 30%;
-        top: 65%;
+        left: 31%;
+        top: 69%;
         font-size: 20px;
       }
     }
@@ -290,6 +291,13 @@ body {font-family: 'Merienda', cursive;
     a:link {
      
       font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    a:link {
+      font-size: 20px;
+    
     }
   }
 
@@ -366,8 +374,8 @@ body {font-family: 'Merienda', cursive;
 
   @media screen and (max-width: 1280px) {
     .bg-text {
-      top: 74%;
-      height: 90%;
+      top: 67%;
+      height: 80%;
     
     }
   }
@@ -595,6 +603,9 @@ color: white;
    
   }
 }
+
+
+
 
 @media screen and (max-width: 1280px) {
   .columnimg {
