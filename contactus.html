@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo-1 (2).png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/contactus.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <title>purba</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/logo-1 (2).png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/contactus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Purba Dhansara Jote Jana Kalyan Samity</title>
 </head>
+
 <body>
-    
+
 
   <div class="navbar">
-    <a href="https://www.facebook.com/khageswar.singha.3914"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size:36px"></i> </a> 
-    <a href="mailto:pdjjks2013ngo@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:36px"></i> </a> 
-    <a href="https://api.whatsapp.com/send?phone=2567xxxxxxxxx" method="get" target="_blank" style="font-size:36px"><i class="fa fa-whatsapp"></i></a>
+    <a href="https://www.facebook.com/khageswar.singha.3914"><i class="fa fa-facebook-square" aria-hidden="true"
+        style="font-size:36px"></i> </a>
+    <a href="mailto:pdjjks2013ngo@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:36px"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=2567xxxxxxxxx" method="get" target="_blank" style="font-size:36px"><i
+        class="fa fa-whatsapp"></i></a>
+  </div>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#default" class="logo"> <img src="img/logo-1 (2).png" alt="Forest" style="width:140px"></a>
+    <div class="topnav-right">
+      <a href="index.html">Home |</a>
+      <a href="ourworks.html">Our Works |</a>
+      <a href="ourteam.html">Our Team |</a>
+      <a href="aboutus.html">About Us |</a>
+      <a href="contactus.html">Contact Us |</a>
+      <a href="donateus.html">Donate </a>
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-      <div class="topnav" id="myTopnav">
-        <a href="#default" class="logo"> <img src="img/logo-1 (2).png" alt="Forest" style="width:140px" ></a>
-         <div class="topnav-right">
-            <a  href="index.html">Home |</a>
-            <a href="ourworks.html">Our Works |</a>
-            <a  href="ourteam.html">Our Team |</a>
-            <a href="aboutus.html">About Us |</a>
-            <a href="contactus.html">Contact Us |</a>
-            <a href="donateus.html">Donate </a>
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-
-<!-- cards -->
-<div class="container">
+  <!-- cards -->
+  <div class="container">
     <img src="img/Contact Us photo.jpeg" alt="Snow" class="new">
-   <div class="centered">Contact Us </div>
+    <div class="centered">Contact Us </div>
     <div class="bottom-left">Get in touch with us</div>
   </div>
   </div>
@@ -49,7 +54,7 @@
 
   <div class="content">
     <h2>Send us a note</h2>
-    <form class="form-inline" action="/action_page.php">
+    <!-- <form class="form-inline" action="/action_page.php">
       <label for="name">Name</label>
       <input type="name" id="name" placeholder="Enter name" name="name">
       <label for="email">Email Id.</label>
@@ -61,12 +66,37 @@
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
        
       <button type="submit">Submit</button>
-    </form>
-    </div>
-
-
-    <div class="content">
+    </form> -->
+    <form name="contactForm" id="from" onsubmit="return validateForm()" action="/examples/actions/confirmation.php" method="post">
+      <h2>Application Form</h2>
       <div class="row">
+        <label>Full Name</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+      </div>
+      <div class="row">
+        <label>Email Address</label>
+        <input type="text" name="email">
+        <div class="error" id="emailErr"></div>
+      </div>
+      <div class="row">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobileErr"></div>
+      </div>
+      <div class="row">
+        <textarea id="subject"  name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+
+      <div class="row">
+        <input type="submit" id="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+
+  <div class="content">
+    <div class="row">
       <div class="column" style="background-color:rgba(170, 170, 170, 0);">
         <h2>Address</h2>
         <p>Khageswar Singha, Vill- Dhansara Jote, P.O- Ranidanga, P.S- Bagdogra, Siliguri, West Bengal 734012</p>
@@ -75,57 +105,143 @@
         <p>Siliguri, West Bengal 734012</p>
       </div>
       <div class="column" style="background-color:rgba(187, 187, 187, 0);">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5042.117850359885!2d88.36277485292!3d26.670383155944357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4444a74bd71d9%3A0x4104d16c2faae9d8!2sPurba%20Dhansara%20Jote%20Jana%20Kalyan%20Samity%20NGO!5e0!3m2!1sen!2sin!4v1617707985396!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5042.117850359885!2d88.36277485292!3d26.670383155944357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4444a74bd71d9%3A0x4104d16c2faae9d8!2sPurba%20Dhansara%20Jote%20Jana%20Kalyan%20Samity%20NGO!5e0!3m2!1sen!2sin!4v1617707985396!5m2!1sen!2sin"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
+  </div>
+
+
+  <h2><u>AN ORGANIZATION YOU CAN TRUST</u></h2>
+
+  <div class="row15">
+    <h5><u>AN ORGANIZATION YOU CAN TRUST</u></h5>
+    <div class="column15 imgBoxR">
+      <img src="img/download.jpg" alt="Snow" style="width:100%">
+    </div>
+    <div class="column15 imgBoxR">
+      <img src="img/Untitled-1.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column15 imgBoxR">
+      <img src="img/Untitled-1 (1).png" alt="Mountains" style="width:100%">
+    </div>
+    <div class="column15 imgBoxR">
+      <img
+        src="https://media.istockphoto.com/vectors/rubber-stamp-with-sponsor-concept-vector-id995710774?k=6&m=995710774&s=612x612&w=0&h=BV43FRk_xA9Yjb-wS45S-BOHtE79habPGxp6RiOqozI="
+        alt="Mountains" style="width:100%">
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <div class="content16">
+
+    <div class="row16">
+      <div class="column16" style="background-color:rgb(44, 44, 44);">
+        <p><b><a href="index.html" target="_blank">Home</a></b></p>
+        <p><b><a href="aboutus.html" target="_blank">About Us</a></b></p>
+        <p><b><a href="ourworks.html" target="_blank">Our Works</a></b></p>
+        <p><b><a href="contactus.html" target="_blank">Contact Us</a></b></p>
+        <p><b><a href="donateus.html" target="_blank">Donate</a></b></p>
+
+      </div>
+      <div class="column16" style="background-color:rgb(44, 44, 44);">
+        <a href="donateus.html"><button class="btn success">Donate</button></a>
+        <p>Join us in this noble cause by donating through our website. Your support is a blessing for many!!
+          It takes one act of kindness to change the community.</p>
+      </div>
+    </div>
+
+    <div class="danger16">
+      <button class="btnsuccess">www.bluewebsurfer.com</button>
+      <a href="https://www.facebook.com/khageswar.singha.3914"><i class="fa fa-facebook-square" aria-hidden="true"
+          style="font-size:36px"></i> </a>
+      <a href="mailto:pdjjks2013ngo@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:36px"></i>
+      </a>
+      <a href="https://api.whatsapp.com/send?phone=2567xxxxxxxxx" method="get" target="_blank" style="font-size:36px"><i
+          class="fa fa-whatsapp"></i></a>
     </div>
 
 
-    <h2><u>AN ORGANIZATION YOU CAN TRUST</u></h2>
+    <script>
+      // Defining a function to display error message
+      function printError(elemId, hintMsg) {
+        document.getElementById(elemId).innerHTML = hintMsg;
+      }
 
-    <div class="row15">
-      <h5><u>AN ORGANIZATION YOU CAN TRUST</u></h5>
-      <div class="column15 imgBoxR">
-        <img src="img/download.jpg" alt="Snow" style="width:100%">
-      </div>
-      <div class="column15 imgBoxR">
-        <img src="img/Untitled-1.png" alt="Forest" style="width:100%">
-      </div>
-      <div class="column15 imgBoxR">
-        <img src="img/Untitled-1 (1).png" alt="Mountains" style="width:100%">
-      </div>
-      <div class="column15 imgBoxR">
-        <img src="https://media.istockphoto.com/vectors/rubber-stamp-with-sponsor-concept-vector-id995710774?k=6&m=995710774&s=612x612&w=0&h=BV43FRk_xA9Yjb-wS45S-BOHtE79habPGxp6RiOqozI=" alt="Mountains" style="width:100%">
-      </div>
-    </div>
+      // Defining a function to validate form 
+      function validateForm() {
+        // Retrieving the values of form elements 
+        var name = document.contactForm.name.value;
+        var email = document.contactForm.email.value;
+        var mobile = document.contactForm.mobile.value;
+        var subject = document.contactForm.subject.value;
+
+        // Defining error variables with a default value
+        var nameErr = emailErr = mobileErr = subject = true;
+
+        // Validate name
+        if (name == "") {
+          printError("nameErr", "Please enter your name");
+        } else {
+          var regex = /^[a-zA-Z\s]+$/;
+          if (regex.test(name) === false) {
+            printError("nameErr", "Please enter a valid name");
+          } else {
+            printError("nameErr", "");
+            nameErr = false;
+          }
+        }
+
+        // Validate email address
+        if (email == "") {
+          printError("emailErr", "Please enter your email address");
+        } else {
+          // Regular expression for basic email validation
+          var regex = /^\S+@\S+\.\S+$/;
+          if (regex.test(email) === false) {
+            printError("emailErr", "Please enter a valid email address");
+          } else {
+            printError("emailErr", "");
+            emailErr = false;
+          }
+        }
+
+        // Validate mobile number
+        if (mobile == "") {
+          printError("mobileErr", "Please enter your mobile number");
+        } else {
+          var regex = /^[1-9]\d{9}$/;
+          if (regex.test(mobile) === false) {
+            printError("mobileErr", "Please enter a valid 10 digit mobile number");
+          } else {
+            printError("mobileErr", "");
+            mobileErr = false;
+          }
+        }
 
 
- <!-- footer -->
- <div class="content16">
 
-  <div class="row16">
-   <div class="column16" style="background-color:rgb(44, 44, 44);">
-    <p><b><a href="index.html" target="_blank">Home</a></b></p>
-    <p><b><a href="aboutus.html" target="_blank">About Us</a></b></p>
-    <p><b><a href="ourworks.html" target="_blank">Our Works</a></b></p>
-    <p><b><a href="contactus.html" target="_blank">Contact Us</a></b></p>
-    <p><b><a href="donateus.html" target="_blank">Donate</a></b></p>
-    
-   </div>
-   <div class="column16" style="background-color:rgb(44, 44, 44);">
-    <a href="donateus.html"><button class="btn success">Donate</button></a>
-    <p>Join us in this noble cause by donating through our website. Your support is a blessing for many!! 
-      It takes one act of kindness to change the community.</p>
-   </div>
- </div>
- 
- <div class="danger16">
-  <button class="btnsuccess">www.bluewebsurfer.com</button>
-  <a href="https://www.facebook.com/khageswar.singha.3914"><i class="fa fa-facebook-square" aria-hidden="true" style="font-size:36px"></i> </a> 
-    <a href="mailto:pdjjks2013ngo@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:36px"></i> </a> 
-    <a href="https://api.whatsapp.com/send?phone=2567xxxxxxxxx" method="get" target="_blank" style="font-size:36px"><i class="fa fa-whatsapp"></i></a>
- </div>
+        // Prevent the form from being submitted if there are any errors
+        if ((nameErr || emailErr || mobileErr || subject) == true) {
+          return false;
+        } else {
+          // Creating a string from input data for preview
+          var dataPreview = "You've entered the following details: \n" +
+            "Full Name: " + name + "\n" +
+            "Email Address: " + email + "\n" +
+            "Mobile Number: " + mobile + "\n" +
+            "text: " + subject + "\n";
+        }
+        // Display input data in a dialog box before submitting the form
+        alert(dataPreview);
+      };
+    </script>
 
- <script src="js/index.js"></script>
+
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>

@@ -315,12 +315,7 @@ body {font-family: 'Merienda', cursive;
     }
   }
 
-  /* @media screen and (min-width: 1280px) {
-    .form-inline {
-      
-     
-    }
-  } */
+ 
   .form-inline label {
     margin: 5px 0px 5px 10;
     font-size: 25px;
@@ -362,9 +357,11 @@ body {font-family: 'Merienda', cursive;
     border-radius: 4px;
     resize: vertical;
     background-color: rgba(0, 0, 0, 0.884);
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 10px;
     font-size: 20px;
+    color: rgb(231, 66, 129);
+
   }
   
   @media (max-width: 800px) {
@@ -378,6 +375,23 @@ body {font-family: 'Merienda', cursive;
       align-items: stretch;
     }
   }
+
+#from{
+
+  width: 35%;
+  margin: auto;
+  
+}
+
+#submit{ 
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+
 
   h2{
 font-size: 30px;
