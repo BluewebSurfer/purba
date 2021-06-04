@@ -598,6 +598,12 @@ height: 450px;
 object-fit: cover;
 }
 
+@media screen and (max-width: 360px) {
+  .yoyo {
+    
+  height:auto;
+  }
+}
 .content10 {
   max-width: 100%;
   margin: auto;
