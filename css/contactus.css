@@ -300,13 +300,27 @@ body {font-family: 'Merienda', cursive;
   * {box-sizing: border-box;}
   
   .form-inline {  
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    flex-flow: column;
     align-items: center;
-    
-    margin-top: 50px;
+    width:32%;
+    margin: auto;
   }
   
+
+  @media screen and (max-width: 770px) {
+    .form-inline {
+      width:70%;
+     
+    }
+  }
+
+  /* @media screen and (min-width: 1280px) {
+    .form-inline {
+      
+     
+    }
+  } */
   .form-inline label {
     margin: 5px 0px 5px 10;
     font-size: 25px;

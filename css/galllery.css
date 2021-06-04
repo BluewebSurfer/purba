@@ -29,7 +29,7 @@ body {font-family: 'Merienda', cursive;
   
   @media screen and (max-width: 500px) {
     .navbar a {
-      
+     
       display: block;
     }
   }
@@ -76,6 +76,7 @@ body {font-family: 'Merienda', cursive;
       display: none;
     }
     
+    
     .topnav a.logo {
       font-size: 45px;
       font-weight: bold;
@@ -112,12 +113,15 @@ body {font-family: 'Merienda', cursive;
     }
     
     @media screen and (max-width: 770px) {
-      .topnav.responsive {position: relative;}
+      .topnav.responsive {position: relative; margin: 0; width: 100%;}
       .topnav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
       }
+
+
+     
       .topnav.responsive a {
         float: none;
         display: block;
@@ -135,7 +139,7 @@ body {font-family: 'Merienda', cursive;
     
     .container img {
       width: 100%;
-      height: 650px;
+      height: 600px;
       object-fit: cover;
     }
     
@@ -166,7 +170,7 @@ body {font-family: 'Merienda', cursive;
       transform: translate(-50%, -50%);
       width: 25%;
       text-align: center;
-      font-size: 70px;
+      font-size: 60px;
       border-left: 13px solid #f4366f;
       font-family: 'Merienda', cursive;
       color: white;
@@ -188,6 +192,7 @@ body {font-family: 'Merienda', cursive;
         font-size: 30px;
       }
     }
+
     @media screen and (max-width: 1280px) {
       .centered {
         width: 18%;
@@ -195,20 +200,20 @@ body {font-family: 'Merienda', cursive;
         font-size: 30px;
       }
     }
+    .imgBoxR:hover
+    {
+      -moz-box-shadow: 0 0 10px #ccc;
+      -webkit-box-shadow: 0 0 10px #ccc;
+      box-shadow: 0 0 10px #ccc;
+      transform: scale(1.1);
 
 
-    @media screen and (max-width: 770px) {
-      .centered {
-        width: 25%;
-
-        left: 18%;
-      
-      }
     }
+
     .bottom-left{
         position: absolute;
         top: 67%;
-        left: 30%;
+        left: 35%;
         transform: translate(-50%, -50%);
         width: 55%;
         text-align: center;
@@ -237,16 +242,13 @@ body {font-family: 'Merienda', cursive;
     @media screen and (max-width: 1280px) {
       .bottom-left {
         width:60%;
-        left: 32%;
-        top: 65%;
+        left: 34%;
+        top: 72%;
         font-size: 20px;
       }
     }
-  
-    .new{
-      box-shadow: 0 0 10px black;
-      width: 100%;
-    }
+   
+
   
   /* link */
   a:link {
@@ -282,32 +284,28 @@ body {font-family: 'Merienda', cursive;
   }
 
   /* body */
-  .imgBoxR:hover
-  {
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
-    transform: scale(1.1);
 
-  }
- 
-  .content {
-    max-width: 100%;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.514);
-    padding: 10px;
-    height: 1000px;
-    overflow: scroll;
-  }
-  
 
-  @media (min-width:568px) and (max-width:1250px) {
-    .content {
-     
-      height: 550px;
-    
-    }
-  }
+  #background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.562) 30%, rgba(32, 167, 43, 0.589) 70%);
+    z-index: -1;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+
   * {
     box-sizing: border-box;
   }
@@ -327,370 +325,173 @@ body {font-family: 'Merienda', cursive;
     display: table;
     clear: both;
   }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
-      height: 500px;
-    }
-  }
-
-  @media (min-width:568px) and (max-width:1250px) {
-    .column {
-     
-      height: 108px;
-    
-    }
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that floats next to each other */
-  .column1 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-    text-align: center;
-    margin-top: 150px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row1:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column1 {
-      width: 100%;
-      height: 350;
-    }
-  }
-
-  .new {
-box-shadow: 0 0 10px black;
-    width: 380px;
-    height: 400px;
-   
-    
-  }
-
-
-  @media screen and (max-width: 480px) {
-    .new {
-      width: 100%;
       height: 400px;
-     margin: 5px;
     }
   }
-
-  @media screen and (max-width: 360px) {
-    .new {
-      width: 100%;
-      height: 400px;
-     margin: 5px;
-    }
-  }
-
-  @media screen and (max-width: 1280px) {
-    .new {
-      width: 297px;
-      height: 329px;
-    }
-  }
-
-  @media (min-width:568px) and (max-width:1250px) {
-    .new {
-      width: 200px;
-      height: 208px;
-    
-    }
-  }
-
-/* 2 */
-  .new1 {
-    box-shadow: 0 0 10px black;
-        width: 380px;
-        height: 400px;
-        
-      }
-    
-    
-      @media screen and (max-width: 480px) {
-        .new1 {
-          width: 100%;
-          height: 400px;
-         margin: 5px;
-        }
-      }
-    
-      @media screen and (max-width: 360px) {
-        .new1 {
-          width: 100%;
-          height: 400px;
-         margin: 5px;
-        }
-      }
-    
-      @media screen and (max-width: 1280px) {
-        .new1 {
-          width: 297px;
-          height: 329px;
-        }
-      }
-    
-      @media (min-width:568px) and (max-width:1250px) {
-        .new1 {
-          width: 221px;
-          height: 208px;
-        
-        }
-      }
+  
   h2{
-text-align: center;
-    color: white;
-    font-size: 25px;
-  }
-
-  h3{
-
-    color: rgb(241, 87, 133);
-    font-size: 25px;
-  }
-
-  h5{
-
-    color: white;
-    font-size: 35px;
+  color: white;
     text-align: center;
-    margin-bottom: 0;
-    display: none;
-  }
-/* @media only screen and (max-width:1000px){
- h5{
-   text-indent: -99999px;
- } */
-/* }
-@media only screen and (max-width:480px){
-  h5{
-    text-indent:1.5em;
-  }
- } */
-  /* next column */
-
-  
-  
-  .content1 {
-    max-width: 100%;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.514);
-    padding: 10px;
-    height: 1700px;
-    margin-top: 80px;
-  }
-  
-
-  @media (min-width:568px) and (max-width:1250px) {
-    .content1 {
-     height:1000px ;
-    }
-  }
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Create four equal columns that floats next to each other */
-  .column2 {
-    float: left;
-    width: 25%;
-    padding: 10px;
-    height: 300px; 
-    text-align: center;
-    margin-top: 150px;/* Should be removed. Only for demonstration */
-  }
-  
-
-  @media (min-width:568px) and (max-width:1250px) {
-    .column2 {
-      margin-top: 0px;
-    
-    }
-  }
-  /* Clear floats after the columns */
-  .row2:after {
-    content: "";
-    display: table;
-    clear: both;
+    font-size: 25px;
+    font-family: 'Merienda', cursive;
   }
   
   
-  * {
-    box-sizing: border-box;
-  }
+  .columnimg{
   
-  /* Create two equal columns that floats next to each other */
-  .column3 {
-    float: left;
-    width: 50%;
-    padding: 10px;
+    width: 500px;
     height: 300px;
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 134px;;
-    /* Should be removed. Only for demonstration */
-  }
-  @media (min-width:568px) and (max-width:1250px) {
-    .column3 {
-      margin-top: 0px;
-    
-    }
-  }
-  /* Clear floats after the columns */
-  .row3:after {
-    content: "";
-    display: table;
-    clear: both;
+    object-fit: cover;
+    box-shadow: 0 0 10px black;
   }
   
-
-  .row3{
-
-    margin-top: 30px;
-  }
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column3 {
+  @media screen and (max-width: 480px) {
+    .columnimg {
       width: 100%;
+     
     }
   }
-  /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column2 {
+  @media screen and (max-width: 360px) {
+    .columnimg {
       width: 100%;
-      margin-top: 130px;
-      height: 400px;
+     
+    }
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 1280px) {
+    .columnimg {
+     
+      width: 350px;
+    height: 300px;
+   
+     
+    }
+  }
+  
+  
+  @media (min-width:568px) and (max-width:1250px) {
+    .columnimg {
+        width: 414px;
+        height: 303px;
+    
     }
   }
 
   /* footer */
 
 * {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column16 {
-  float: left;
-  width: 50%;
-  padding: 20px;
-  height: 300px;
-  text-align: center;
-  color: white;
-  margin-top: 30px; /* Should be removed. Only for demonstration */
-}
-.column17 {
-  float: left;
-  width: 50%;
-  padding: 20px;
-  height: 300px;
-  text-align: center;
-  color: white;
-  margin-top: 30px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row16:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 480px) {
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
   .column16 {
-    width: 100%;
-    margin-top: 0 ;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    color: white;
+    margin-top: 30px; /* Should be removed. Only for demonstration */
   }
-}
-@media screen and (max-width: 480px) {
   .column17 {
-    width: 100%;
-    height: 400px;
-    margin-top: 0px;
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+    color: white;
+    margin-top: 30px; /* Should be removed. Only for demonstration */
   }
-}
-@media (min-width:568px) and (max-width:1250px) {
-  .column17 {
-    margin-top: 0px;
- 
+  
+  /* Clear floats after the columns */
+  .row16:after {
+    content: "";
+    display: table;
+    clear: both;
   }
-}
-.danger16 {
-  background-color: #f777b2;
- 
-  padding: 18px 12px;
   
-  box-shadow: 0 0 20px black;
- 
-}
-
-
-.btn {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 25px;
-  display: block;
-  margin: auto;
-  box-shadow: 0 0 10px black;
   
- 
-}
-
-.success {background-color: #4CAF50;} /* Green */
-.success:hover {background-color: #46a049;}
-
-
-
-.btnsuccess{
-  border: none;
-  color: white;
-  padding: 1px 18px;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 25px;
-  display: block;
-  margin-left: 0;
-  margin-right: auto;
-  box-shadow: 0 0 10px black;  
-  color: white;
-  background-color:#46a049 ;
-}
-
-
-@media screen and (max-width: 480px) {
-  .btnsuccess {
-    margin-right: 160px;
-    display: block;
-    margin-top: 20px;
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 480px) {
+    .column16 {
+      width: 100%;
+      margin-top: 0 ;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .column17 {
+      width: 100%;
+      height: 400px;
+      margin-top: 0px;
+    }
+  }
+  
+  .danger16 {
+    background-color: #f777b2;
+   
+    padding: 18px 12px;
+    
+    box-shadow: 0 0 20px black;
    
   }
-}
+  
+  
+  .btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 10px black;
+    
+   
+  }
+  
+  .success {background-color: #4CAF50;} /* Green */
+  .success:hover {background-color: #46a049;}
+  
+
+
+  .btnsuccess{
+    border: none;
+    color: white;
+    padding: 1px 18px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    box-shadow: 0 0 10px black;  
+    color: white;
+    background-color:#46a049 ;
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    .btnsuccess {
+      margin-right: 160px;
+      display: block;
+      margin-top: 20px;
+     
+    }
+  }
+  
   .fa {
   float:right;
   padding: 5px;
   margin-top: -40px;
   }
-   @media screen and (max-width:480px) {  
-  #rupan{
-   font-size: 1px;
-  }
-}
+    
